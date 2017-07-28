@@ -1,0 +1,70 @@
+{
+  "BACK_BUTTON_TEXT" : "Back",
+
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
+  "CONGREGATION": "Congregation",
+  "EMAIL": "Email",
+  "PHONE_NUMBER": "Phone Number",
+  "USERNAME": "Username",
+  "PASSWORD": "Password",
+  "LOGIN": "Sign in",
+  "SIGNUP": "Sign up",
+
+  "SECRET": "Secret",
+  "INCORRECT_SECRET": "Incorrect Secret!",
+  "SECRET_HINT": "The secret is located in Song #202 - the last word of the first verse.",
+
+  "HOME": "Home",
+
+  "MAP_TITLE": "Map",
+
+  "TUTORIAL_SKIP_BUTTON" : "Skip",
+  "TUTORIAL_CONTINUE_BUTTON" : "Continue",
+
+  "TUTORIAL_SLIDE1_TITLE": "Welcome to the LLConnect!",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "<b>LLConnect</b> is an app to ...",
+
+  "TUTORIAL_SLIDE2_TITLE": "How to use LLConnect",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Blah blah blah...",
+
+  "TUTORIAL_SLIDE3_TITLE": "Share your ideas",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Have an idea for this app? Leave us feedback to help improve this app.",
+
+  "TUTORIAL_SLIDE4_TITLE": "Ready to Connect?",
+
+  "WELCOME_INTRO" : "Get started with LLConnect",
+
+  "SETTINGS_TITLE": "Settings",
+  "SETTINGS_OPTION1": "Option 1",
+  "SETTINGS_OPTION2": "Option 2",
+  "SETTINGS_OPTION3": "Option 3",
+  "SETTINGS_OPTION4": "Option 4",
+
+  "SETTINGS_PROFILE_BUTTON" : "Edit Profile",
+
+  "SETTINGS_PAGE_PROFILE": "Edit Profile",
+
+  "WELCOME_TITLE": "Welcome",
+
+  "LOGIN_TITLE": "Sign in",
+  "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
+  "LOGIN_BUTTON": "Sign in",
+  "SIGNUP_TITLE": "Sign up",
+  "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+  "SIGNUP_BUTTON": "Sign up",
+
+  "MEMBERS": "Members",
+
+  "ITEM_NAME_PLACEHOLDER" : "Name",
+  "ITEM_ABOUT_PLACEHOLDER" : "About",
+
+  "DONE_BUTTON" : "Done",
+  "CANCEL_BUTTON" : "Cancel",
+  "DELETE_BUTTON" : "Delete",
+
+  "CARDS_TITLE": "Social",
+
+  "SEARCH_PLACEHOLDER" : "Search",
+  "SEARCH_TITLE": "Search"
+}

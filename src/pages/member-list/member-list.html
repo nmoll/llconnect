@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'MEMBERS' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-searchbar (ionInput)="filterMembers($event)" placeholder="{{ 'SEARCH_PLACEHOLDER' | translate }}"></ion-searchbar>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let member of filteredContacts">
+      <button ion-item (click)="openMember(member)">
+        <ion-avatar item-start>
+          <img [src]="member.profilePic" />
+        </ion-avatar>
+        <h2>{{member.name}}</h2>
+        <p>{{member.about}}</p>
+        <ion-note item-end *ngIf="member.note">{{member.note}}</ion-note>
+      </button>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

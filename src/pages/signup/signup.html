@@ -1,0 +1,69 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'SIGNUP_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <form (submit)="doSignup()">
+    <ion-list>
+
+      <ion-item>
+        <ion-label fixed>{{ 'FIRST_NAME' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'LAST_NAME' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'PHONE_NUMBER' | translate }}</ion-label>
+        <ion-input type="phoneNumber" [(ngModel)]="account.phoneNumber" name="phoneNumber"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'CONGREGATION' | translate }}</ion-label>
+        <ion-select name="congregation">
+          <ion-option value="Cokato">Cokato</ion-option>
+          <ion-option value="Elk River">Elk River</ion-option>
+          <ion-option value="Ishpeming">Ishpeming</ion-option>
+          <ion-option value="Longview">Longview</ion-option>
+          <ion-option value="Menahga">Menahga</ion-option>
+          <ion-option value="Minneapolis">Minneapolis</ion-option>
+          <ion-option value="Monticello">Monticello</ion-option>
+          <ion-option value="North Sound">North Sound</ion-option>
+          <ion-option value="Phoenix">Phoenix</ion-option>
+          <ion-option value="Prescott">Prescott</ion-option>
+          <ion-option value="Rockford">Rockford</ion-option>
+          <ion-option value="Seattle">Seattle</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
+        <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'SECRET' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="secret" name="name"></ion-input>
+      </ion-item>
+      <p style="padding-left: 16px;">{{ 'SECRET_HINT' | translate }}<p>
+
+      <div padding>
+        <button ion-button color="primary" block>{{ 'SIGNUP_BUTTON' | translate }}</button>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>

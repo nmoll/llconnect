@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ member.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="member-profile" text-center #profilePic [style.background-image]="'url(' + member.profilePic + ')'">
+  </div>
+
+  <div class="member-detail" padding>
+    <h2>{{member.name}}</h2>
+    <p>{{member.about}}</p>
+  </div>
+</ion-content>
