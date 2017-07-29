@@ -58,6 +58,9 @@
   "INVITE_MEMBERS": "Invite Members",
   "INVITE": "Invite",
   "INVITE_N": "Invite ({{n}})",
+  "INVITATION_MESSAGE_PLACEHOLDER": "Try out the new LLConnect app!",
+  "MESSAGE_SEND_SUCCESS": "Message Sent!",
+  "MESSAGE_SEND_FAILURE": "Failed to send message.",
 
   "ITEM_NAME_PLACEHOLDER" : "Name",
   "ITEM_ABOUT_PLACEHOLDER" : "About",
