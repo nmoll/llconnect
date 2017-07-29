@@ -55,6 +55,9 @@
   "SIGNUP_BUTTON": "Sign up",
 
   "MEMBERS": "Members",
+  "INVITE_MEMBERS": "Invite Members",
+  "INVITE": "Invite",
+  "INVITE_N": "Invite ({{n}})",
 
   "ITEM_NAME_PLACEHOLDER" : "Name",
   "ITEM_ABOUT_PLACEHOLDER" : "About",
@@ -66,5 +69,8 @@
   "CARDS_TITLE": "Social",
 
   "SEARCH_PLACEHOLDER" : "Search",
-  "SEARCH_TITLE": "Search"
+  "SEARCH_TITLE": "Search",
+
+  "SEND_MESSAGE": "Send Message",
+  "SEND": "Send"
 }

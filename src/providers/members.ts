@@ -4,8 +4,6 @@ import 'rxjs/add/operator/map';
 
 import { Api } from './api';
 
-import { Member } from '../models/member';
-
 @Injectable()
 export class Members {
 

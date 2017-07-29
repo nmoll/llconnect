@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'INVITE' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button [disabled]="!selectedCount" (click)="sendMessage()" color="primary">
+        {{ 'INVITE_N' | translate: { n: selectedCount } }}
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+
+</ion-header>
+
+<ion-content>
+
+  <!-- <ion-searchbar (ionInput)="filterMembers($event)" placeholder="{{ 'SEARCH_PLACEHOLDER' | translate }}"></ion-searchbar> -->
+
+  <ion-list [virtualScroll]="contactList">
+    <ion-item-sliding *virtualItem="let contact">
+      <button ion-item>
+        <ion-checkbox [(ngModel)]="selected[contact.id]" (ionChange)="onSelect(contact)"></ion-checkbox>
+        <ion-label>{{ contact.name.formatted }}</ion-label>
+      </button>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

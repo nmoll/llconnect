@@ -3,12 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule, Http } from '@angular/http';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { Storage, IonicStorageModule } from '@ionic/storage';
+import { Contacts } from '@ionic-native/contacts';
+import { SMS } from '@ionic-native/sms';
 
 import { MyApp } from './app.component';
 
 import { CardsPage } from '../pages/cards/cards';
 import { ContentPage } from '../pages/content/content';
 import { MemberDetailPage } from '../pages/member-detail/member-detail';
+import { MemberInvitationPage } from '../pages/member-invitation/member-invitation';
 import { MemberListPage } from '../pages/member-list/member-list';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
@@ -17,6 +20,7 @@ import { MenuPage } from '../pages/menu/menu';
 import { SettingsPage } from '../pages/settings/settings';
 import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
+import { TextMessagePage } from '../pages/text-message/text-message';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
 
@@ -60,6 +64,7 @@ export function provideSettings(storage: Storage) {
     CardsPage,
     ContentPage,
     MemberDetailPage,
+    MemberInvitationPage,
     MemberListPage,
     HomePage,
     LoginPage,
@@ -68,6 +73,7 @@ export function provideSettings(storage: Storage) {
     SettingsPage,
     SignupPage,
     TabsPage,
+    TextMessagePage,
     TutorialPage,
     WelcomePage
   ],
@@ -90,6 +96,7 @@ export function provideSettings(storage: Storage) {
     CardsPage,
     ContentPage,
     MemberDetailPage,
+    MemberInvitationPage,
     MemberListPage,
     HomePage,
     LoginPage,
@@ -98,12 +105,15 @@ export function provideSettings(storage: Storage) {
     SettingsPage,
     SignupPage,
     TabsPage,
+    TextMessagePage,
     TutorialPage,
     WelcomePage
   ],
   providers: [
     Api,
+    Contacts,
     Members,
+    SMS,
     User,
     Camera,
     GoogleMaps,

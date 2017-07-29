@@ -1,0 +1,15 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'SEND_MESSAGE' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="sendMessage()" color="primary">{{ 'SEND' | translate }}</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-textarea [(ngModel)]="message">
+  </ion-textarea>
+</ion-content>

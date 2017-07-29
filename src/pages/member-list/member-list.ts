@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 
 import { MemberDetailPage } from '../member-detail/member-detail';
+import { MemberInvitationPage } from '../member-invitation/member-invitation';
 
 import { Members } from '../../providers/providers';
 
@@ -14,13 +15,13 @@ import { Member } from '../../models/member';
 export class MemberListPage {
 
   contacts: Member[];
-  filteredContacts: Member[];
+  filteredMembers: Member[];
 
   constructor(public navCtrl: NavController, public members: Members, public modalCtrl: ModalController) {
     this.contacts = this.members.query();
-    this.filteredContacts = [];
+    this.filteredMembers = [];
     this.contacts.forEach((contact: Member) => {
-      this.filteredContacts.push(contact);
+      this.filteredMembers.push(contact);
     });
   }
 
@@ -37,18 +38,22 @@ export class MemberListPage {
     });
   }
 
+  inviteMembers() {
+    this.navCtrl.push(MemberInvitationPage);
+  }
+
   filterMembers(event): void {
-    this.filteredContacts.length = 0;
+    this.filteredMembers.length = 0;
 
     let searchTerm = (event.target.value || '').trim();
 
     this.contacts.forEach((contact: Member) => {
       if (searchTerm) {
         if (contact.name.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1) {
-          this.filteredContacts.push(contact);
+          this.filteredMembers.push(contact);
         }
       } else {
-        this.filteredContacts.push(contact);
+        this.filteredMembers.push(contact);
       }
     });
   }
