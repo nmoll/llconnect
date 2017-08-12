@@ -1,0 +1,53 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'CARPOOL_CREATE' | translate }}</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="cancel()">
+        <span color="primary" showWhen="ios">
+          {{ 'CANCEL_BUTTON' | translate }}
+        </span>
+        <ion-icon name="md-close" showWhen="core,android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button (click)="done()" [disabled]="!form.valid" strong>
+        <span color="primary" showWhen="ios">
+          {{ 'DONE_BUTTON' | translate }}
+        </span>
+        <ion-icon name="md-checkmark" showWhen="core,android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <form *ngIf="form" [formGroup]="form">
+    <ion-list>
+      <ion-item>
+        <ion-label>{{ 'CARPOOL_NAME' | translate }}</ion-label>
+        <ion-input type="text" formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>{{ 'CARPOOL_NUM_SEATS' | translate }}</ion-label>
+        <ion-select type="number" formControlName="seats">
+          <ion-option value="1">1</ion-option>
+          <ion-option value="2">2</ion-option>
+          <ion-option value="3">3</ion-option>
+          <ion-option value="4">4</ion-option>
+          <ion-option value="5" checked="true">5</ion-option>
+          <ion-option value="6">6</ion-option>
+          <ion-option value="7">7</ion-option>
+          <ion-option value="8">8</ion-option>
+          <ion-option value="9">9</ion-option>
+          <ion-option value="11">11</ion-option>
+          <ion-option value="12">12</ion-option>
+          <ion-option value="13">13</ion-option>
+          <ion-option value="14">14</ion-option>
+          <ion-option value="15">15</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>

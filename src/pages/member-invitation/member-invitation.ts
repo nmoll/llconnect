@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Contact, Contacts, ContactName } from '@ionic-native/contacts';
+import { Contact, Contacts } from '@ionic-native/contacts';
 import { TextMessagePage } from '../text-message/text-message';
 
 @Component({

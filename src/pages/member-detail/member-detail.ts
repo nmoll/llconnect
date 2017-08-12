@@ -8,7 +8,7 @@ import { NavController, NavParams } from 'ionic-angular';
 export class MemberDetailPage {
   member: any;
 
-  constructor(public navCtrl: NavController, navParams: NavParams) {
+  constructor(navParams: NavParams) {
     this.member = navParams.get('member');
   }
 

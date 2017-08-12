@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
 
 import { Member } from '../../models/member';
 
@@ -7,41 +6,16 @@ import { Member } from '../../models/member';
 export class Members {
   members: Member[] = [];
 
-  constructor(public http: Http) {
-    let members = [
-      {
-        "name": "Burt Bear",
-        "profilePic": "assets/img/speakers/bear.jpg"
-      },
-      {
-        "name": "Charlie Cheetah",
-        "profilePic": "assets/img/speakers/cheetah.jpg"
-      },
-      {
-        "name": "Donald Duck",
-        "profilePic": "assets/img/speakers/duck.jpg"
-      },
-      {
-        "name": "Eva Eagle",
-        "profilePic": "assets/img/speakers/eagle.jpg"
-      },
-      {
-        "name": "Ellie Elephant",
-        "profilePic": "assets/img/speakers/elephant.jpg"
-      },
-      {
-        "name": "Molly Mouse",
-        "profilePic": "assets/img/speakers/mouse.jpg"
-      },
-      {
-        "name": "Paul Puppy",
-        "profilePic": "assets/img/speakers/puppy.jpg"
-      }
+  constructor() {
+    this.members = [
+      new Member("Burt Bear", "assets/img/speakers/bear.jpg"),
+      new Member("Charlie Cheetah", "assets/img/speakers/cheetah.jpg"),
+      new Member("Donald Duck", "assets/img/speakers/duck.jpg"),
+      new Member("Eva Eagle", "assets/img/speakers/eagle.jpg"),
+      new Member("Ellie Elephant", "assets/img/speakers/elephant.jpg"),
+      new Member("Molly Mouse", "assets/img/speakers/mouse.jpg"),
+      new Member("Paul Puppy", "assets/img/speakers/puppy.jpg")
     ];
-
-    for (let member of members) {
-      this.members.push(new Member(member.name, member.profilePic));
-    }
   }
 
   query(params?: any) {

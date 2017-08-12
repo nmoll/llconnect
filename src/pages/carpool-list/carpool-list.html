@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'CARPOOLS' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="createCarpool()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+      <button ion-item *ngFor="let carpool of carpoolList" (click)="openCarpool(carpool)">
+        <span class="text-light pull-right">{{ 'CARPOOL_N_SEATS_AVAILABLE' | translate:{ n: carpool.seats } }}</span>
+        <h2>{{ carpool.name }}</h2>
+      </button>
+  </ion-list>
+</ion-content>

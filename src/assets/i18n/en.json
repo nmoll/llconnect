@@ -62,6 +62,12 @@
   "MESSAGE_SEND_SUCCESS": "Message Sent!",
   "MESSAGE_SEND_FAILURE": "Failed to send message.",
 
+  "CARPOOLS": "Carpools",
+  "CARPOOL_NAME": "Carpool Name",
+  "CARPOOL_NUM_SEATS": "# Seats",
+  "CARPOOL_N_SEATS_AVAILABLE": "{{n}} Seats Left",
+  "CARPOOL_CREATE": "New Carpool",
+
   "ITEM_NAME_PLACEHOLDER" : "Name",
   "ITEM_ABOUT_PLACEHOLDER" : "About",
 

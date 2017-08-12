@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ carpool.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      {{ 'MEMBERS' | translate }} ({{ carpool.members.length }}/{{ carpool.seats }})
+    </ion-list-header>
+    <div ion-item *ngFor="let member of carpool.members">
+      <h2>{{ member.name }}</h2>
+    </div>
+    <button ion-item>
+      Join Carpool
+    </button>
+  </ion-list>
+</ion-content>

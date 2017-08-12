@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { CarpoolListPage } from '../carpool-list/carpool-list';
 
 @Component({
   selector: 'page-home',
@@ -8,7 +9,7 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   menuItems: Array<{ title: string, page: any }> = [
-    { title: 'Carpools', page: null },
+    { title: 'Carpools', page: CarpoolListPage },
     { title: 'Committees', page: null },
     { title: 'Events', page: null },
     { title: 'For Sale', page: null },

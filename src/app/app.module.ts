@@ -9,6 +9,9 @@ import { SMS } from '@ionic-native/sms';
 import { MyApp } from './app.component';
 
 import { CardsPage } from '../pages/cards/cards';
+import { CarpoolCreatePage } from '../pages/carpool-create/carpool-create';
+import { CarpoolDetailPage } from '../pages/carpool-detail/carpool-detail';
+import { CarpoolListPage } from '../pages/carpool-list/carpool-list';
 import { ContentPage } from '../pages/content/content';
 import { MemberDetailPage } from '../pages/member-detail/member-detail';
 import { MemberInvitationPage } from '../pages/member-invitation/member-invitation';
@@ -25,6 +28,7 @@ import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
 
 import { Api } from '../providers/api';
+import { Carpools } from '../providers/carpools';
 import { Members } from '../mocks/providers/members';
 import { Settings } from '../providers/settings';
 import { User } from '../providers/user';
@@ -52,9 +56,9 @@ export function provideSettings(storage: Storage) {
    */
   return new Settings(storage, {
     option1: true,
-    option2: 'Ionitron J. Framework',
-    option3: '3',
-    option4: 'Hello'
+    option2: '',
+    option3: '',
+    option4: ''
   });
 }
 
@@ -62,6 +66,9 @@ export function provideSettings(storage: Storage) {
   declarations: [
     MyApp,
     CardsPage,
+    CarpoolCreatePage,
+    CarpoolDetailPage,
+    CarpoolListPage,
     ContentPage,
     MemberDetailPage,
     MemberInvitationPage,
@@ -94,6 +101,9 @@ export function provideSettings(storage: Storage) {
   entryComponents: [
     MyApp,
     CardsPage,
+    CarpoolCreatePage,
+    CarpoolDetailPage,
+    CarpoolListPage,
     ContentPage,
     MemberDetailPage,
     MemberInvitationPage,
@@ -111,6 +121,7 @@ export function provideSettings(storage: Storage) {
   ],
   providers: [
     Api,
+    Carpools,
     Contacts,
     Members,
     SMS,
